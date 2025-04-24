@@ -1,42 +1,42 @@
 # 🎯 Smart Vision for Visually Impaired
 
-A lightweight real-time object detection and narration system for visually impaired users, using **TensorFlow Lite**, **Raspberry Pi 4**, and **pyttsx3** for speech output.
+A real-time object detection and narration system built using **YOLOv8**, **TensorFlow Lite**, and **Raspberry Pi 4**. Designed to assist visually impaired individuals by recognizing surroundings and speaking the names of detected objects.
 
 ---
 
 ## 🧠 Overview
 
-This project uses a Raspberry Pi and camera module to detect objects in real-time using a TensorFlow Lite model and narrates them aloud. Ideal for visually impaired assistance and smart wearables.
+This project utilizes **YOLOv8** for highly accurate object detection, exports the model to **TensorFlow Lite** for Raspberry Pi compatibility, and narrates detected objects using **offline text-to-speech (TTS)**.
 
 ---
 
 ## 🛠️ Hardware Requirements
 
-- ✅ Raspberry Pi 4 (4GB or 8GB recommended)
+- ✅ Raspberry Pi 4 (4GB or 8GB)
 - 📸 Pi Camera Module v2 / USB Camera
-- 🎤 Microphone (optional for voice commands)
-- 🔊 Speaker / Earphones (for audio output)
-- 💾 MicroSD Card (32GB+ recommended)
-- 🔌 Power Supply (5V 3A for Pi 4)
+- 🔊 Speaker or Earphones
+- 💾 MicroSD Card (32GB+)
+- 🔌 Power Adapter (5V 3A)
 
 ---
 
 ## 📦 Software Requirements
 
-- Python 3.7+
-- TensorFlow Lite
+- Python 3.8+
 - OpenCV
+- TensorFlow Lite
+- `ultralytics` library for YOLOv8
 - pyttsx3 (offline TTS)
-- NumPy
 
 ---
 
 ## 🔧 Installation
 
 ```bash
-# Update system
+# Update and install dependencies
 sudo apt update && sudo apt upgrade -y
-
-# Install dependencies
 sudo apt install python3-pip python3-opencv espeak -y
-pip3 install tensorflow numpy pyttsx3 opencv-python
+
+# Install YOLOv8 and supporting libraries
+pip install ultralytics
+pip install pyttsx3 opencv-python tflite-runtime
