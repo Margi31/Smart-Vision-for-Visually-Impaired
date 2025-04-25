@@ -40,3 +40,10 @@ sudo apt install python3-pip python3-opencv espeak -y
 # Install YOLOv8 and supporting libraries
 pip install ultralytics
 pip install pyttsx3 opencv-python tflite-runtime
+
+
+<<<<<<< HEAD
+Your local version
+=======
+The version on GitHub
+>>>>>>> origin/main
