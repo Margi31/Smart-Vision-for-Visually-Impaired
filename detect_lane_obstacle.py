@@ -8,9 +8,9 @@ import pyttsx3  # Voice alerts
 model = YOLO("yolov8n.pt")  # Nano model for speed
 if torch.cuda.is_available():
     model.to("cuda")
-    print("🔋 Using GPU")
+    print("Using GPU")
 else:
-    print("⚙ Using CPU")
+    print("Using CPU")
 
 # Constants
 FOCAL_LENGTH = 615  # Adjusted based on your setup
@@ -36,7 +36,7 @@ def estimate_distance(box_height, label):
 def process_video(video_path):
     cap = cv2.VideoCapture(video_path)
     if not cap.isOpened():
-        print(f"❌ Couldn't open {video_path}")
+        print(f"Couldn't open {video_path}")
         return
 
     while True:
@@ -64,7 +64,7 @@ def process_video(video_path):
 
                 if distance is not None and distance < CLOSE_THRESHOLD_CM:
                     color = (0, 0, 255)
-                    alert_text = f"🚨 {label} too close!"
+                    alert_text = f" {label} too close!"
 
                     # Speak only once per object
                     engine.say(f"Warning! {label} is close.")
@@ -96,4 +96,4 @@ def process_video(video_path):
     cv2.destroyAllWindows()
 
 # Run
-process_video("1Video.mp4")
+process_video("Video1.mp4")

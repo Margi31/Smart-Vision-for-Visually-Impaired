@@ -1,10 +1,13 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # AI_project
 Implementation of PCA with ANN algorithm for Face recognition
 =======
 =======
 >>>>>>> 400346ad858ae03c98a576488a50db22187c36d0
+=======
+>>>>>>> 4b955ee4eea6b48b5f93e198d2bbfadd456b5050
 # 🎯 Smart Vision for Visually Impaired
 
 A real-time object detection and narration system built using **YOLOv8**, **TensorFlow Lite**, and **Raspberry Pi 4**. Designed to assist visually impaired individuals by recognizing surroundings and speaking the names of detected objects.
@@ -48,6 +51,16 @@ sudo apt install python3-pip python3-opencv espeak -y
 pip install ultralytics
 pip install pyttsx3 opencv-python tflite-runtime
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 400346ad858ae03c98a576488a50db22187c36d0
 =======
 >>>>>>> 400346ad858ae03c98a576488a50db22187c36d0
+=======
+
+
+<<<<<<< HEAD
+Your local version
+=======
+The version on GitHub
+>>>>>>> origin/main
+>>>>>>> 4b955ee4eea6b48b5f93e198d2bbfadd456b5050
