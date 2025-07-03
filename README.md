@@ -6,7 +6,7 @@ Designed to assist visually impaired individuals by recognizing surroundings and
 This project leverages the accuracy of YOLOv8 for object detection, exports the model to TensorFlow Lite for efficient edge inference on Raspberry Pi, and narrates detected objects using offline text-to-speech (TTS).
 The system runs locally and does not require an internet connection for inference or narration.
 
-🛠️ Hardware Requirements
+## 🛠️ Hardware Requirements
 Raspberry Pi 4 (4GB or 8GB recommended)
 Pi Camera Module v2 or USB Camera
 Speaker or Earphones
