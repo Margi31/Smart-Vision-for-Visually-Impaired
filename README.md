@@ -1,63 +1,38 @@
-# AI_project
-Implementation of PCA with ANN algorithm for Face recognition
-=======
-=======
->>>>>>> 400346ad858ae03c98a576488a50db22187c36d0
-=======
->>>>>>> 4b955ee4eea6b48b5f93e198d2bbfadd456b5050
-# 🎯 Smart Vision for Visually Impaired
-
-A real-time object detection and narration system built using **YOLOv8**, **TensorFlow Lite**, and **Raspberry Pi 4**. Designed to assist visually impaired individuals by recognizing surroundings and speaking the names of detected objects.
-
----
+## 🎯 Smart Vision for Visually Impaired
+A real-time object detection and narration system built using YOLOv8, TensorFlow Lite, and Raspberry Pi 4.
+Designed to assist visually impaired individuals by recognizing surroundings and speaking the names of detected objects.
 
 ## 🧠 Overview
-
-This project utilizes **YOLOv8** for highly accurate object detection, exports the model to **TensorFlow Lite** for Raspberry Pi compatibility, and narrates detected objects using **offline text-to-speech (TTS)**.
-
----
+This project leverages the accuracy of YOLOv8 for object detection, exports the model to TensorFlow Lite for efficient edge inference on Raspberry Pi, and narrates detected objects using offline text-to-speech (TTS).
+The system runs locally and does not require an internet connection for inference or narration.
 
 ## 🛠️ Hardware Requirements
-
-- ✅ Raspberry Pi 4 (4GB or 8GB)
-- 📸 Pi Camera Module v2 / USB Camera
-- 🔊 Speaker or Earphones
-- 💾 MicroSD Card (32GB+)
-- 🔌 Power Adapter (5V 3A)
+Raspberry Pi 4 (4GB or 8GB recommended)
+Pi Camera Module v2 or USB Camera
+Speaker or Earphones
+MicroSD Card (32GB or larger)
+Power Adapter (5V 3A)
 
 ---
 
 ## 📦 Software Requirements
-
-- Python 3.8+
-- OpenCV
-- TensorFlow Lite
-- `ultralytics` library for YOLOv8
-- pyttsx3 (offline TTS)
+Python 3.8 or higher
+OpenCV
+TensorFlow Lite Runtime
+Ultralytics YOLOv8
+pyttsx3 (offline TTS))
 
 ---
 
-## 🔧 Installation
+## 🚀 Installation
 
 ```bash
-# Update and install dependencies
+# Update and upgrade your Raspberry Pi
 sudo apt update && sudo apt upgrade -y
+
+# Install Python and system dependencies
 sudo apt install python3-pip python3-opencv espeak -y
 
-# Install YOLOv8 and supporting libraries
+# Install Python libraries
 pip install ultralytics
 pip install pyttsx3 opencv-python tflite-runtime
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 400346ad858ae03c98a576488a50db22187c36d0
-=======
->>>>>>> 400346ad858ae03c98a576488a50db22187c36d0
-=======
-
-
-<<<<<<< HEAD
-Your local version
-=======
-The version on GitHub
->>>>>>> origin/main
->>>>>>> 4b955ee4eea6b48b5f93e198d2bbfadd456b5050
